@@ -1,29 +1,20 @@
+<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ระบบแอปพลิเคชัน</title>
+    <title>อวยพรบ่าวสาว</title>
     <style>
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            overflow: hidden; 
-            background-color: #ffffff;
-        }
-        /* ดันแถบฟ้าของ Google หลุดขอบจอขึ้นไปด้านบน */
-        iframe { 
-            position: absolute; 
-            top: -15px; 
-            left: 0; 
-            width: 100%; 
-            height: calc(100% + 50px); 
-            border: none; 
-        }
+        html, body { margin:0; padding:0; height:100%; overflow:hidden; background:#fffaf3; }
+        iframe { position:absolute; top:-40px; left:0; width:100%; height:calc(100% + 40px); border:none; }
     </style>
 </head>
 <body>
-    <!-- ลิงก์ Web App ของคุณฝังตัวอยู่ตรงนี้แล้ว -->
-    <iframe src="https://script.google.com/macros/s/AKfycbzu_9kXeeurZFrkBANdX2FVnicHCpZTZ-lbgDdYDpsPDFqLr4LaOTw4yxeaNS37dXFd/exec"></iframe>
+<script>
+var f = document.createElement('iframe');
+f.src = 'https://script.google.com/macros/s/AKfycbwbIYdztM_6ZYaDYeBEceDnBE4wzbJyYHyQUcG1_o3ptAkqbtloSG-4dI1TBauKoKSg/exec' + location.search;
+f.allow = 'clipboard-write; fullscreen';
+document.body.appendChild(f);
+</script>
 </body>
 </html>
